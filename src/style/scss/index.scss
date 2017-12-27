@@ -7,13 +7,6 @@ html, body, #app {
   @include size(100%);
 }
 
-body {
-  font-family: 'Roboto', '黑體-繁', '微軟正黑體', sans-serif;
-}
-p, span {
-  font-size: 1.4em;
-}
-
 .flat-testimonials {
   .color-green {
     font-weight: bold;
@@ -23,9 +16,17 @@ p, span {
   width: 100%;
 }
 
-.flat-testimonials .flat-testimonials-in img {
-  width: 200px;
-  height: auto;
+.flat-testimonials-in.md-margin-bottom-50 {
+  p, span {
+    text-align: center;
+  }
+}
+
+.flat-testimonials .flat-testimonials-in {
+  background: rgba(255,255,255,0.5);
+  img {
+    @include size(200px, auto);
+  }
 }
 
 .content-boxes-v5 {

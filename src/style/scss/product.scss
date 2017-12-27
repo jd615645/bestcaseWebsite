@@ -3,12 +3,6 @@
   height: $h;
 }
 
-.headline-center-v2 {
-  h2 {
-
-  }
-}
-
 .product-size label {
   color: #18ba9b !important;
   cursor: pointer;
@@ -133,5 +127,14 @@
       background: url(../../img/n9918_7.png) center center no-repeat;
       background-size: 250px;
     }
+  }
+}
+
+p {
+  font-size: 1.2em;
+}
+.table-striped {
+  th, td {
+    font-size: 1.2em;
   }
 }

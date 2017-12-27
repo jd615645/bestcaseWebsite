@@ -59,18 +59,38 @@ block content
     .tab-v6
       ul.nav.nav-tabs(role='tablist')
         li.active
+          a(href='#specifications', role='tab', data-toggle='tab') 產品規格
+        li
           a(href='#howtouse', role='tab', data-toggle='tab') 使用方式
         li
           a(href='#instructions', role='tab', data-toggle='tab') 內裝說明
       .tab-content
-        // Description
-        #howtouse.tab-pane.fade.in.active
-          h1 page1
-        // End Description
-        // Reviews
-        #instructions.tab-pane.fade
+        #specifications.tab-pane.fade.in.active
+          h2 材質
+          p ABS塑鋼，PC(透明防彈玻璃材質)三層複合式箱殼材料獨一無二本體更耐撞，重擊後不易白化。
+          
+          h2 尺寸
+          table.table.table-striped
+            thead
+              tr
+                th 吋數
+                th 長(cm)
+                th 寬(cm)
+                th 深(cm)
+                th 重量(kg)
+                th 備註
+            tbody
+              tr
+                td 18 吋
+                td 49
+                td 35
+                td 23
+                td 3.8
+                td 1~3天適用
+        #howtouse.tab-pane.fade.in
           h1 page2
-        // End Reviews
+        #instructions.tab-pane.fade
+          h1 page3
 
 block append js
   script(src='./js/product.js')
