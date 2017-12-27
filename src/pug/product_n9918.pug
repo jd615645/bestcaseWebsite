@@ -1,0 +1,78 @@
+extends layout
+block style
+  link(rel='stylesheet', href='assets/css/shop.style.css')
+  link(rel='stylesheet', href='./style/product.css')
+block content
+  // === Shop Product ===
+  .shop-product
+    // Breadcrumbs v5
+    .container
+      ul.breadcrumb-v5
+        li
+          a(href='product.html') 產品介紹
+        li.active N9918 亮面戰車登機箱系列
+    // End Breadcrumbs v5
+    .container
+      .row
+        .col-md-6
+          .case-product
+            .image(name='n9918', value='1')
+        .col-md-6
+          .shop-product-heading
+            h2 N9918 亮面戰車登機系列
+          p
+            | ABS塑鋼，PC(透明防彈玻璃材質)三層複合式箱殼材料獨一無二本體更耐撞，重擊後不易白化。
+          br
+          h3.shop-product-title 吋數
+          ul.list-inline.product-size.margin-bottom-30
+            li(title='18吋')
+              label(for='size-1') 18
+          // /end product size
+          h3.shop-product-title Color
+          ul.list-inline.product-color.margin-bottom-30
+            li(title='玫瑰粉紫')
+              input#color-1(type='radio', name='color', value='1', checked='')
+              label(for='color-1')
+            li(title='鈦金銀')
+              input#color-2(type='radio', name='color', value='2')
+              label(for='color-2')
+            li(title='極光藍(淺)')
+              input#color-3(type='radio', name='color', value='3')
+              label(for='color-3')
+            li(title='魅力咖啡')
+              input#color-4(type='radio', name='color', value='4')
+              label(for='color-4')
+            li(title='寶石藍(深)')
+              input#color-5(type='radio', name='color', value='5')
+              label(for='color-5')
+            li(title='蘋果綠')
+              input#color-6(type='radio', name='color', value='6')
+              label(for='color-6')
+            li(title='鑽石黑')
+              input#color-7(type='radio', name='color', value='7')
+              label(for='color-7')
+          // /end product color
+      // /end row
+  // === End Shop Product ===
+
+  .content-md.container
+    .tab-v6
+      ul.nav.nav-tabs(role='tablist')
+        li.active
+          a(href='#howtouse', role='tab', data-toggle='tab') 使用方式
+        li
+          a(href='#instructions', role='tab', data-toggle='tab') 內裝說明
+      .tab-content
+        // Description
+        #howtouse.tab-pane.fade.in.active
+          h1 page1
+        // End Description
+        // Reviews
+        #instructions.tab-pane.fade
+          h1 page2
+        // End Reviews
+
+block append js
+  script(src='./js/product_9918.js')
+  
+

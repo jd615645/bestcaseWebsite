@@ -1,0 +1,71 @@
+@mixin size($w, $h:$w) {
+  width: $w;
+  height: $h;
+}
+
+html, body, #app {
+  @include size(100%);
+}
+
+body {
+  font-family: 'Roboto', '黑體-繁', '微軟正黑體', sans-serif;
+}
+p, span {
+  font-size: 1.4em;
+}
+
+.flat-testimonials {
+  .color-green {
+    font-weight: bold;
+  }
+}
+.header-v3.header-sticky > div > div > div.navbar-collapse.mega-menu.navbar-responsive-collapse.collapse.in > div {
+  width: 100%;
+}
+
+.flat-testimonials .flat-testimonials-in img {
+  width: 200px;
+  height: auto;
+}
+
+.content-boxes-v5 {
+  display: flex;
+  align-items: center;
+}
+
+.header-v3 .dropdown > a:after {
+  top: 0px;
+  right: 0px;
+  content: "";
+}
+
+
+.interactive-slider-v2 {
+  h1 {
+    font-size: 50px;
+  }
+  &.img-v4 {
+    // background: url(../../img/index_header.png) no-repeat;
+  }
+}
+.case9918 {
+  @include size(200px, 352px);
+  margin: 0px auto;
+  transition: all 0.5s;
+  background: url(../../img/9918_side.png) center center no-repeat;
+  &:hover {
+    background: url(../../img/9918_pos.png) center center no-repeat;
+  }
+}
+.casen9918 {
+  @include size(200px, 352px);
+  margin: 0px auto;
+  transition: all 0.5s;
+  background: url(../../img/n9918_side.png) center center no-repeat;
+  &:hover {
+    background: url(../../img/n9918_pos.png) center center no-repeat;
+  }
+}
+.bg-image-v1 {
+  background: url(../../img/index_bg.png) repeat fixed;
+}

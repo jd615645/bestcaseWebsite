@@ -1,0 +1,110 @@
+extends layout
+block style
+  link(rel='stylesheet', href='./style/index.css')
+block content
+  // Interactive Slider v2
+  .interactive-slider-v2
+    .container
+      h1 擁有佳仕奇旅行箱 讓您「無旅不悅」
+      p 日本設計 永久服務 台灣製造
+  // End Interactive Slider v2
+
+  .content-md
+    .container
+      // Service Box
+      .row.text-center.margin-bottom-60
+        .col-md-4.md-margin-bottom-50
+          img.image-md.margin-bottom-20(src='./assets/img/icons/flat/01.png', alt='')
+          h1.title-v3-md.margin-bottom-10 日本設計
+          p
+        .col-md-4.flat-service.md-margin-bottom-50
+          img.image-md.margin-bottom-20(src='./assets/img/icons/flat/02.png', alt='')
+          h2.title-v3-md.margin-bottom-10 永久服務
+          p
+        .col-md-4.flat-service
+          img.image-md.margin-bottom-20(src='./assets/img/icons/flat/03.png', alt='')
+          h2.title-v3-md.margin-bottom-10 台灣製造
+          p
+      // End Service Box
+    // Flat Testimonials
+    .flat-testimonials.bg-image-v1.parallaxBg.margin-bottom-60
+      .container
+        .headline-center.headline-light.margin-bottom-60
+          h2 我們的產品
+          p
+            | 第七代戰車系列行李箱
+        // /end Headline Center
+        .row
+          .col-sm-6
+            .flat-testimonials-in.md-margin-bottom-50
+              .case9918
+              h3 9918
+              span.color-green 亮面戰車系列
+              p
+                | 拉桿可承受70kg
+              p
+                | 超堅固150kg
+              p
+                | 360度超大戰車
+          .col-sm-6
+            .flat-testimonials-in.md-margin-bottom-50
+              .casen9918
+              h3 N9918
+              span.color-green 亮面戰車登機箱系列
+              p
+                | PC材質堅固耐用
+              p
+                | 360度超大戰車
+              p
+                | 超堅固
+          //- .col-sm-4
+          //-   .flat-testimonials-in
+          //-     img.rounded-x.img-responsive(src='assets/img/team/img3-sm.jpg', alt='')
+          //-     h3 Anthony Connor
+          //-     span.color-green Software Developer
+          //-     p
+          //-       | Proin et augue vel nisi rhoncus tincidunt. Cras venenatis, magna id sem ipsum mi interduml
+        // /end row
+      // /end container
+    .container
+      .headline-center.margin-bottom-60
+        h2 品質保證
+        p
+          | 美麗華皮件工業股份有限公司所製造的皮箱可受力 70 公斤不變形，並使用 20000 次以上以及耐碰撞。
+      // /end Headline Center
+      .row.margin-bottom-40
+        .col-md-6
+          .content-boxes-v5.margin-bottom-30
+            i.rounded-x.icon-globe
+            h3.no-top-space 2009 年 6 月通過 ISO 9001 2000 版
+        .col-md-6
+          .content-boxes-v5.margin-bottom-30
+            i.rounded-x.icon-globe
+            h3.no-top-space 2010 年 4 月通過 MIT 微笑標章驗証
+        .col-md-6
+          .content-boxes-v5.margin-bottom-30
+            i.rounded-x.icon-star
+            h3.no-top-space 2010 年 6 月通過 ISO 9001 2008 版
+        .col-md-6
+          .content-boxes-v5.margin-bottom-30
+            i.rounded-x.icon-check
+            h3.no-top-space 通過 BQR ISO 2002 驗證合格
+      // /end row
+    // /end container
+
+block append js
+  // JS Customization
+  script(type='text/javascript', src='./assets/js/custom.js')
+  // JS Page Level
+  script(type='text/javascript', src='./assets/js/app.js')
+  script(type='text/javascript', src='./assets/js/plugins/fancy-box.js')
+  script(type='text/javascript', src='./assets/js/plugins/owl-carousel.js')
+  script(type='text/javascript', src='./assets/js/plugins/style-switcher.js')
+  script(type='text/javascript').
+    jQuery(document).ready(function() {
+    App.init();
+    App.initParallaxBg();
+    FancyBox.initFancybox();
+    OwlCarousel.initOwlCarousel();
+    StyleSwitcher.initStyleSwitcher();
+    });

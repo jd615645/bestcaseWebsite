@@ -1,0 +1,32 @@
+extends layout
+block style
+  link(rel='stylesheet', href='./style/product.css')
+block content
+  .container.content-sm
+    .headline-center-v2.headline-center-v2-dark.margin-bottom-60
+      h2 產品介紹
+      span.bordered-icon
+        i.fa.fa-th-large
+      p
+        | 日本設計美麗華台灣生產。低噪音、飛機輪、接近無聲。
+    // /Headline Center V2
+    .row
+      .col-sm-6
+        .thumbnails-v1
+          .thumbnail-img
+            a(href='product_9918.html', title='9918 亮面戰車系列')
+              img.img-responsive(src='./img/9918_4.png')
+          .caption
+            h3
+              a(href='product_9918.html') 9918 亮面戰車系列
+            
+      .col-sm-6
+        .thumbnails-v1
+          .thumbnail-img
+            a(href='product_n9918.html', title='N9918 亮面戰車登機箱系列')
+              img.img-responsive(src='./img/n9918_4.png')
+          .caption
+            h3
+              a(href='product_n9918.html') N9918 亮面戰車登機箱系列
+
+block append js
