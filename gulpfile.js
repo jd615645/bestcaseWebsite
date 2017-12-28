@@ -1,6 +1,8 @@
 const gulp = require('gulp')
 const $ = require('gulp-load-plugins')()
 const del = require('del')
+const runSequence = require('run-sequence')
+const ghPages = require('gulp-gh-pages')
 
 const paths = {
   src: {
@@ -30,7 +32,9 @@ gulp.task('pug', () => {
 
 gulp.task('sass', () => {
   gulp.src(paths.src.scss)
-    .pipe($.sass())
+    .pipe($.sass({
+      outputStyle: 'compressed'
+    }))
     .pipe(gulp.dest(paths.dist.style))
 })
 gulp.task('css', () => {
@@ -72,6 +76,13 @@ gulp.task('webserver', () => {
       directoryListing: false
     }))
 })
+
+// gh-pages
+gulp.task('deploy', function () {
+  return gulp.src('build/**/*')
+    .pipe(ghPages())
+})
+
 // Cleaning
 gulp.task('clean', () => {
   return del(['dist/**/*'])
@@ -85,3 +96,7 @@ gulp.task('watch', () => {
 
 gulp.task('default', ['webserver', 'watch'])
 gulp.task('build', ['pug', 'css', 'sass', 'scripts', 'lib'])
+
+gulp.task('ghpage', function () {
+  runSequence('clean', 'build', ['image', 'assets'], 'deploy')
+})
