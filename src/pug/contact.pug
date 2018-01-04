@@ -6,24 +6,58 @@ block content
   // === Content Part ===
   .container.content
     .headline-center-v2.headline-center-v2-dark.margin-bottom-60
-      h2 聯絡我們
+      h2 聯絡方式
       span.bordered-icon
         i.fa.fa-th-large
-    .row.margin-bottom-60
-      .col-md-6.col-sm-6
-        // Google Map
-        #map.height-450
-        // End Google Map
-      .col-md-6.col-sm-6
+
+    .row.margin-bottom-30
+      .col-md-9.mb-margin-bottom-30
+        .headline
+          h2 聯絡表單
+        br
+        form#sky-form3.sky-form.contact-style(action="assets/php/sky-forms-pro/demo-contacts-process.php", method="post")
+          fieldset.no-padding
+            label
+              | 聯絡人
+              span.color-red *
+            .row.sky-space-20
+              .col-md-7.col-md-offset-0
+                div
+                  input#name.form-control(type='text', name='name')
+            label
+              | 單位名稱
+              span.color-red
+            .row.sky-space-20
+              .col-md-7.col-md-offset-0
+                div
+                  input#name.form-control(type='text', name='name')
+            label
+              | Email 
+              span.color-red *
+            .row.sky-space-20
+              .col-md-7.col-md-offset-0
+                div
+                  input#email.form-control(type='text', name='email')
+            label
+              | 內容
+              span.color-red *
+            .row.sky-space-20
+              .col-md-11.col-md-offset-0
+                div
+                  textarea#message.form-control(rows='8', name='message')
+            button.btn-u(type='submit') 送出
+          .message
+            p 
+              i.rounded-x.fa.fa-check
+              | 成功寄出!
+      // /col-md-9
+      .col-md-3
         // Contacts
-        h3 聯絡方式
-        ul.list-unstyled.who
+        .headline
+          h2 Contacts
+        ul.list-unstyled.who.margin-bottom-30
           li
-            a(href='#')
-              i.fa.fa-home
-              | 408台中市南屯區文心南路三路996巷2號1樓
-          li
-            a(href='#')
+            a(href='mailto:bestcase@gmail.com')
               i.fa.fa-envelope
               | bestcase@gmail.com
           li
@@ -37,28 +71,32 @@ block content
           li
             a(href='#')
               i.fa.fa-globe
-              | https://bestcase.com.tw/
-        hr
-        // Business Hours
-        h3 工作時間
-        ul.list-unstyled
-          li
-            strong Monday-Friday:
-            |  10am to 8pm
-          li
-            strong Saturday:
-            |  11am to 3pm
-          li
-            strong Sunday:
-            |  Closed
+              | bestcase.com.tw
+
+    .headline
+      h2 訂購單
+
+    .row.equal-height-columns.margin-bottom-60
+      .col-sm-4
+        a.download(href='#', target='_blank')
+          .easy-block-v3.service-or.equal-height-column.bg-color-green
+            .service-bg
+            i.icon-basket
+            .inner-faq-b
+              h3 3.9折 訂購單
+      .col-sm-4
+        a.download(href='#', target='_blank')
+          .easy-block-v3.service-or.equal-height-column.bg-color-green
+            .service-bg
+            i.icon-basket-loaded
+            .inner-faq-b
+              h3 5折 訂購單
+
   // === End Content Part ===
 block append js
   // JS Implementing Plugins
   script(type='text/javascript', src='assets/plugins/back-to-top.js')
   script(type='text/javascript', src='assets/plugins/smoothScroll.js')
-  script(type='text/javascript', src='https://maps.google.com/maps/api/js?key=AIzaSyDXyvSFXaifhFrpK43NvquFKMgC_YASvKI')
-  script(type='text/javascript', src='assets/plugins/gmap/gmap.js')
-  script(type='text/javascript', src='assets/plugins/owl-carousel/owl-carousel/owl.carousel.js')
 
   // JS Page Level
   script(type='text/javascript', src='assets/js/app.js')
@@ -68,7 +106,5 @@ block append js
   script(type='text/javascript').
     jQuery(document).ready(function() {
       App.init();
-      ContactPage.initMap();
-      OwlCarousel.initOwlCarousel();
       StyleSwitcher.initStyleSwitcher();
     });

@@ -1,10 +1,20 @@
-a, p, span {
-  font-family: 'Roboto', '黑體-繁', '微軟正黑體', sans-serif !important;
-  font-size: 1.4em;
+.collapse.navbar-collapse.mega-menu.navbar-responsive-collapse ul a {
+  font-size: 18px;
 }
 
-footer {
-  p {
-    text-align: justify;
+a, p, span, label {
+  font-family: 'Roboto', '黑體-繁', '微軟正黑體', sans-serif !important;
+  font-size: 1.6em;
+}
+.fa {
+  font-family: FontAwesome !important;
+}
+
+.footer-v1 {
+  p, span, address, a {
+    font-size: 16px !important;
+  }
+  .copyright p {
+    font-size: 1em;
   }
 }

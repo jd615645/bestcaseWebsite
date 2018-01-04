@@ -23,7 +23,7 @@ html, body, #app {
 }
 
 .flat-testimonials .flat-testimonials-in {
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.3);
   img {
     @include size(200px, auto);
   }
@@ -47,12 +47,30 @@ html, body, #app {
   background: url(../img/index_banner.png) no-repeat center center;
   background-size: cover;
   h1 {
-    font-size: 50px;
+    font-size: 42px;
   }
-  &.img-v4 {
-    // background: url(../../img/index_header.png) no-repeat;
+  .container {
+    display: none;
   }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1190px) {
+  .interactive-slider-v2 {
+    background: url(../img/index_banner_md.png) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .interactive-slider-v2 {
+    background: url(../img/index_banner_sm.png) no-repeat center center;
+    background-size: cover;
+  }
+  .container {
+    display: block !important;
+  }
+}
+
 .case9918 {
   @include size(200px, 352px);
   margin: 0px auto;

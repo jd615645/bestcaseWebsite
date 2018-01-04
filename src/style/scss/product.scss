@@ -8,7 +8,9 @@
   cursor: pointer;
   border-color: #18ba9b !important;
 }
-
+p {
+  font-size: 1.4em;
+}
 .caption {
   h3 {
     text-align: center;
@@ -29,30 +31,30 @@
 
 .product-color label {
   &[for='color-1'] {
-    background: #d694bd;
+    background: rgb(218, 99, 175);
   }
   &[for='color-2'] {
-    background: #eee5df;
+    background: rgb(199, 192, 187);
   }
   &[for='color-3'] {
-    background: #75c7d4;
+    background: rgb(130, 221, 235);
   }
   &[for='color-4'] {
-    background: #9c9799;
+    background: rgb(99, 83, 83);
   }
   &[for='color-5'] {
-    background: #403d4e;
+    background: rgb(85, 77, 126);
   }
   &[for='color-6'] {
-    background: #e2dfa4;
+    background: rgb(200, 221, 117);
   }
   &[for='color-7'] {
-    background: #6c696e;
+    background: rgb(61, 56, 63);
   }
 }
 
 .case-product {
-  @include size(455px);
+  @include size(100%, 455px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +63,7 @@
   background-color: #e4e4e2;
 
   .product-color label[for='color-1'] {
-    background: #d694bd;
+    background: rgb(218, 99, 175);
   }
   
   .image {
@@ -130,11 +132,33 @@
   }
 }
 
-p {
-  font-size: 1.2em;
-}
 .table-striped {
   th, td {
-    font-size: 1.2em;
+    font-size: 1.4em;
+  }
+}
+
+#productColor {
+  margin-left: 10px;
+}
+
+.feature {
+  .feature-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 400px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .feature-text {
+    height: 266px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  p, li {
+    font-size: 1.4em;
   }
 }

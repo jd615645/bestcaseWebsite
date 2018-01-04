@@ -1,0 +1,47 @@
+extends layout
+block style
+  link(rel='stylesheet', href='./style/service.css')
+block content
+  .container.content
+    .headline-center-v2.headline-center-v2-dark.margin-bottom-60
+      h2 維修方式
+      span.bordered-icon
+        i.fa.fa-th-large
+    .row.margin-bottom-60
+      .col-md-3.md-margin-bottom-50
+        .service-block-v7
+          i.fa.fa-camera-retro
+          h3.title-v3-bg.text-uppercase 拍照回報
+          p 將欲維修之行李箱拍照回傳本公司
+          ul
+            li
+              | 照片需含行李箱損壞地方特寫及行李箱全貌照片各一張
+            li
+              | 照片e-mail傳送至
+            a(href='mailto:bestcase@gmail.com') bestcase@gmail.com
+      .col-md-3.md-margin-bottom-50
+        .service-block-v7
+          i.fa.fa-user
+          h3.title-v3-bg.text-uppercase 確認維修
+          p 與本公司客服專員確認維修方式，本公司客服專員會與您連絡確認維修方式及相關細節。
+      .col-md-3.md-margin-bottom-50
+        .service-block-v7
+          i.fa.fa-archive
+          h3.title-v3-bg.text-uppercase 寄回公司
+          p 將行李箱寄回公司維修，寄回產品時，麻煩務必於行李箱內附上A4紙張，載明客戶姓名、電話、住址及描述欲維修的部分。
+      .col-md-3.md-margin-bottom-50
+        .service-block-v7
+          i.fa.fa-check
+          h3.title-v3-bg.text-uppercase 維修完成
+          p
+            | 維修完成後，本公司客服專員會與您聯繫並安排行李箱回寄相關事宜。
+    
+    .headline-center-v2.headline-center-v2-dark.margin-bottom-60
+      h2 注意事項
+      span.bordered-icon
+        i.fa.fa-th-large
+    p ※ 產品若因"人為因素"損壞，本公司將酌收維修材料費用。
+    p ※ 未與本公司客服確認之前，請勿直接將維修行李箱寄回本公司。
+    p 維修相關問題，歡迎撥打本公司客服專線04-24621638。
+    
+block append js

@@ -20,15 +20,16 @@ block content
         .col-md-6
           .shop-product-heading
             h2 N9918 亮面戰車登機系列
-          p
-            | ABS塑鋼，PC(透明防彈玻璃材質)三層複合式箱殼材料獨一無二本體更耐撞，重擊後不易白化。
+          p 日本設計，美麗華台灣廠生產。
           br
           h3.shop-product-title 吋數
           ul.list-inline.product-size.margin-bottom-30
             li(title='18吋')
               label(for='size-1') 18
           // /end product size
-          h3.shop-product-title Color
+          h3.shop-product-title
+            | Color
+            span#productColor 玫瑰粉紫
           ul.list-inline.product-color.margin-bottom-30
             li(title='玫瑰粉紫')
               input#color-1(type='radio', name='color', value='1', checked='')
@@ -60,10 +61,10 @@ block content
       ul.nav.nav-tabs(role='tablist')
         li.active
           a(href='#specifications', role='tab', data-toggle='tab') 產品規格
-        li
-          a(href='#howtouse', role='tab', data-toggle='tab') 使用方式
-        li
-          a(href='#instructions', role='tab', data-toggle='tab') 內裝說明
+        //- li
+        //-   a(href='#howtouse', role='tab', data-toggle='tab') 使用方式
+        //- li
+        //-   a(href='#instructions', role='tab', data-toggle='tab') 內裝說明
       .tab-content
         #specifications.tab-pane.fade.in.active
           h2 材質
@@ -87,10 +88,49 @@ block content
                 td 23
                 td 3.8
                 td 1~3天適用
-        #howtouse.tab-pane.fade.in
-          h1 page2
-        #instructions.tab-pane.fade
-          h1 page3
+          h2 產品特色
+          .row.feature.margin-bottom-30
+            .col-md-6.feature-img
+              img(src='./img/n9918_wheel.png')
+            .col-md-6.hidden-sm.hidden-xs.feature-text
+              h3 360度超大戰車車輪
+              ul
+                li 世界上最耐用的輪子
+                li 四輪活動360度旋轉
+                li 超耐用，超靜音
+            .col-sm-6.hidden-md.hidden-lg
+              h3 360度超大戰車車輪
+              ul
+                li 世界上最耐用的輪子
+                li 四輪活動360度旋轉
+                li 超耐用，超靜音
+          .row.feature.margin-bottom-30
+            .col-md-6.feature-img
+                img(src='./img/n9918_handle.png')
+            .col-md-6.hidden-sm.hidden-xs.feature-text
+              h3 超強狀70kg
+              p 世界上最耐用的拉桿，70kg壓下來也可撐得住
+            .col-sm-6.hidden-md.hidden-lg
+              h3 超強狀70kg
+              p 世界上最耐用的拉桿，70kg壓下來也可撐得住
+          .row.feature.margin-bottom-30
+            .col-md-6.feature-img
+                img(src='./img/feature.png')
+            .col-md-6.hidden-sm.hidden-xs.feature-text
+              h3 網狀隔板
+              p 可拆除式網狀隔板可隨時拆除或裝上，更方便
+            .col-sm-6.hidden-md.hidden-lg
+              h3 網狀隔板
+              p 可拆除式網狀隔板可隨時拆除或裝上，更方便
+          .row.feature.margin-bottom-30
+            .col-md-6.feature-img
+                img(src='./img/tsa.png')
+            .col-md-6.hidden-sm.hidden-xs.feature-text
+              h3 TSA國際海關鎖
+              p TSA是和美國海關簽約，使用方式可像家中的鑰匙一樣開關鎖頭，避免在旅途中遺失物品。
+            .col-sm-6.hidden-md.hidden-lg
+              h3 TSA國際海關鎖
+              p TSA是和美國海關簽約，使用方式可像家中的鑰匙一樣開關鎖頭，避免在旅途中遺失物品。
 
 block append js
   script(src='./js/product.js')
