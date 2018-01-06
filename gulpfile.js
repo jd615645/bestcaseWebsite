@@ -64,6 +64,18 @@ gulp.task('assets', () => {
   gulp.src(paths.src.assets)
     .pipe(gulp.dest(paths.dist.assets))
 })
+gulp.task('assetsmin', () => {
+  gulp.src('./src/assets/css/**')
+    .pipe($.cleanCss({ compatibility: '*'}))
+    .pipe(gulp.dest('./dist/assets/css'))
+  gulp.src('./src/assets/js/**')
+    // .pipe($.uglify())
+    .pipe(gulp.dest('./dist/assets/js'))
+  gulp.src('./src/assets/img/**')
+    .pipe(gulp.dest('./dist/assets/img'))
+  gulp.src('./src/assets/plugins/**')
+    .pipe(gulp.dest('./dist/assets/plugins'))
+})
 
 gulp.task('webserver', () => {
   gulp
