@@ -35,6 +35,9 @@ a, p, span, label {
 }
 
 .header-v3 {
+  &.header-fixed-shrink {
+    height: 140px !important;
+  }
   .navbar-brand {
     height: 90px;
     padding: 0px;
