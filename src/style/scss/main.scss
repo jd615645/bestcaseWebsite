@@ -18,3 +18,27 @@ a, p, span, label {
     font-size: 1em;
   }
 }
+
+.header-fixed .header-v3 {
+  height: 110px;
+}
+
+@media screen and (max-width: 991px) {
+  .header-fixed .header-v3 {
+    height: inherit !important;
+  }
+}
+
+.header-v3 {
+  .navbar-brand {
+    height: 90px;
+    padding: 0px;
+  }
+} 
+.navbar-toggle {
+  margin-top: 40px;
+}
+
+.nav.navbar-nav {
+  margin-top: 20px;
+}
