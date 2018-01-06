@@ -3,6 +3,6 @@ $(document).ready(function () {
     let space = $(this).find('input').attr('value')
     let colorName = $(this).attr('title')
     $('.image').attr('value', space)
-    $('#productColor').html(colorName)
+    $('.product-color-text').html(colorName)
   })
 })

@@ -3,10 +3,6 @@
   height: $h;
 }
 
-html, body, #app {
-  @include size(100%);
-}
-
 .flat-testimonials {
   .color-green {
     font-weight: bold;

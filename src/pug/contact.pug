@@ -11,18 +11,18 @@ block content
         i.fa.fa-th-large
 
     .row.margin-bottom-30
-      .col-md-9.mb-margin-bottom-30
+      .col-md-8.mb-margin-bottom-30
         .headline
           h2 聯絡表單
         br
-        form#gform.sky-form.contact-style(action='https://script.google.com/macros/s/AKfycbwcJ5rh7jJbOZnsUK7X1PHvJWrbVPbiDedFOlTw-g0tlDDwUTE/exec',  data-email='jd615645@gmail.com', method='post')
+        form#gform.sky-form.contact-style(action='https://script.google.com/macros/s/AKfycbwcJ5rh7jJbOZnsUK7X1PHvJWrbVPbiDedFOlTw-g0tlDDwUTE/exec', method='post')
           fieldset.no-padding
             label(for='name') 聯絡人
               span.color-red *
             #name.row.sky-space-20
               .col-md-7.col-md-offset-0
                 div
-                  input#name.form-control(type='text', name='name')
+                  input#name.form-control(type='text', name='name', required='required')
             label(for='company') 單位名稱
               span.color-red
             .row.sky-space-20
@@ -34,61 +34,44 @@ block content
             .row.sky-space-20
               .col-md-7.col-md-offset-0
                 div
-                  input#email.form-control(type='email', name='email')
+                  input#email.form-control(type='email', name='email', required='required')
             label(for='message') 訊息
               span.color-red *
             .row.sky-space-20
               .col-md-11.col-md-offset-0
                 div
-                  textarea#message.form-control(rows='8', name='message')
+                  textarea#message.form-control(rows='8', name='message', required='required')
             button.btn-u(type='submit') 送出
         #thankyou_message.message
           p 
             i.rounded-x.fa.fa-check
             | 成功寄出!
-      // /col-md-9
-      .col-md-3
+      .col-md-4
         // Contacts
         .headline
           h2 Contacts
         ul.list-unstyled.who.margin-bottom-30
           li
-            a(href='mailto:bestcase@gmail.com')
-              i.fa.fa-envelope
-              | bestcase@gmail.com
+            a(href='#')
+              i.fa.fa-fw.fa-map-marker
+              | 408台中市南屯區文心南三路996巷2號1F
+          li
+            a(href='mailto:bestcase168@gmail.com')
+              i.fa.fa-fw.fa-envelope
+              | bestcase168@gmail.com
           li
             a(href='#')
-              i.fa.fa-phone
+              i.fa.fa-fw.fa-phone
               | 04 2462 1638
           li
             a(href='#')
-              i.fa.fa-fax
+              i.fa.fa-fw.fa-fax
               | 04 2462 0995
           li
             a(href='#')
-              i.fa.fa-globe
+              i.fa.fa-fw.fa-globe
               | bestcase.com.tw
 
-    .headline
-      h2 訂購單
-
-    .row.equal-height-columns.margin-bottom-60
-      .col-sm-4
-        a.download(href='#', target='_blank')
-          .easy-block-v3.service-or.equal-height-column.bg-color-green
-            .service-bg
-            i.icon-basket
-            .inner-faq-b
-              h3 3.9折 訂購單
-      .col-sm-4
-        a.download(href='#', target='_blank')
-          .easy-block-v3.service-or.equal-height-column.bg-color-green
-            .service-bg
-            i.icon-basket-loaded
-            .inner-faq-b
-              h3 5折 訂購單
-
-  // === End Content Part ===
 block append js
   // JS Implementing Plugins
   script(type='text/javascript', src='assets/plugins/back-to-top.js')

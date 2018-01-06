@@ -37,7 +37,7 @@ html
     
     block style
   body.header-fixed
-    #app.wrapper(v-cloak)
+    .wrapper
       include ./header.pug
       block content
       include ./footer.pug
@@ -51,9 +51,5 @@ html
       script(type='text/javascript', src='./assets/plugins/smoothScroll.js')
       script(type='text/javascript', src='./assets/plugins/jquery.parallax.js')
       script(type='text/javascript', src='./assets/plugins/parallax-slider/js/modernizr.js')
-      script(type='text/javascript', src='./assets/plugins/parallax-slider/js/jquery.cslider.js')
-      script(type='text/javascript', src='./assets/plugins/fancybox/source/jquery.fancybox.pack.js')
-      script(type='text/javascript', src='./assets/plugins/owl-carousel/owl-carousel/owl.carousel.js')
-
 
       block js
