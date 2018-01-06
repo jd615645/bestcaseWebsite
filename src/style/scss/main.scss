@@ -11,8 +11,13 @@ a, p, span, label {
 }
 
 .footer-v1 {
-  p, span, address, a {
+  p, span, address {
     font-size: 16px !important;
+  }
+  address {
+    a {
+      font-size: 16px !important;
+    }
   }
   .copyright p {
     font-size: 1em;
@@ -41,4 +46,13 @@ a, p, span, label {
 
 .nav.navbar-nav {
   margin-top: 20px;
+}
+
+.homepage-link {
+  font-size: 32px !important;
+  color: #23527c;
+  &:hover {
+    color: #62aff4;
+    text-decoration: none;
+  }
 }
