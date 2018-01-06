@@ -15,41 +15,37 @@ block content
         .headline
           h2 聯絡表單
         br
-        form#sky-form3.sky-form.contact-style(action="assets/php/sky-forms-pro/demo-contacts-process.php", method="post")
+        form#gform.sky-form.contact-style(action='https://script.google.com/macros/s/AKfycbwcJ5rh7jJbOZnsUK7X1PHvJWrbVPbiDedFOlTw-g0tlDDwUTE/exec',  data-email='jd615645@gmail.com', method='post')
           fieldset.no-padding
-            label
-              | 聯絡人
+            label(for='name') 聯絡人
               span.color-red *
-            .row.sky-space-20
+            #name.row.sky-space-20
               .col-md-7.col-md-offset-0
                 div
                   input#name.form-control(type='text', name='name')
-            label
-              | 單位名稱
+            label(for='company') 單位名稱
               span.color-red
             .row.sky-space-20
               .col-md-7.col-md-offset-0
                 div
-                  input#name.form-control(type='text', name='name')
-            label
-              | Email 
+                  input#company.form-control(type='text', name='company')
+            label(for='email') Email 
               span.color-red *
             .row.sky-space-20
               .col-md-7.col-md-offset-0
                 div
-                  input#email.form-control(type='text', name='email')
-            label
-              | 內容
+                  input#email.form-control(type='email', name='email')
+            label(for='message') 訊息
               span.color-red *
             .row.sky-space-20
               .col-md-11.col-md-offset-0
                 div
                   textarea#message.form-control(rows='8', name='message')
             button.btn-u(type='submit') 送出
-          .message
-            p 
-              i.rounded-x.fa.fa-check
-              | 成功寄出!
+        #thankyou_message.message
+          p 
+            i.rounded-x.fa.fa-check
+            | 成功寄出!
       // /col-md-9
       .col-md-3
         // Contacts
@@ -103,6 +99,8 @@ block append js
   script(type='text/javascript', src='assets/js/pages/page_contacts.js')
   script(type='text/javascript', src='assets/js/plugins/owl-carousel.js')
   script(type='text/javascript', src='assets/js/plugins/style-switcher.js')
+  script(data-cfasync='false' type='text/javascript' src='./js/form-submission-handler.js')
+
   script(type='text/javascript').
     jQuery(document).ready(function() {
       App.init();
