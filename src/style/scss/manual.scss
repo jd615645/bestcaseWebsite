@@ -9,3 +9,20 @@ ul li {
     text-align: justify;
   }
 }
+
+a.commodore-link {
+  &:hover {
+    text-decoration: none;
+    i, h3 {
+      color: #BDE4F4;
+    }
+
+  }
+  .easy-block-v3 {
+    max-width: 320px;
+    padding: 20px;
+  }
+  h3 {
+    margin-top: 11px;
+  }
+}
