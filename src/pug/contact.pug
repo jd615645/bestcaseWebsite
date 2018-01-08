@@ -7,15 +7,15 @@ block content
   .container.content
     .headline-center-v2.headline-center-v2-dark.margin-bottom-60
       h2 聯絡方式
-      span.bordered-icon
-        i.fa.fa-th-large
+      img.line-icon(src='./img/line_icon.png')
+
 
     .row.margin-bottom-30
-      .col-md-8.mb-margin-bottom-30
+      .col-md-6.mb-margin-bottom-30
         .headline
           h2 聯絡表單
         br
-        form#gform.sky-form.contact-style(action='https://script.google.com/macros/s/AKfycbwcJ5rh7jJbOZnsUK7X1PHvJWrbVPbiDedFOlTw-g0tlDDwUTE/exec', method='post')
+        form#gform.sky-form.contact-style(action='https://script.google.com/macros/s/AKfycbzv_LmPKgoN5gPmK8i0Xcx7WDNuF0yDSachhJlIpIJqdj4rFFDu/exec', method='post')
           fieldset.no-padding
             label(for='name') 聯絡人
               span.color-red *
@@ -46,7 +46,7 @@ block content
           p 
             i.rounded-x.fa.fa-check
             | 成功寄出!
-      .col-md-4
+      .col-md-6
         // Contacts
         .headline
           h2 Contacts
