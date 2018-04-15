@@ -1,0 +1,147 @@
+extends layout
+block style
+  link(rel='stylesheet', href='assets/css/shop.style.css')
+  link(rel='stylesheet', href='./style/product.css')
+block content
+  // === Shop Product ===
+  .shop-product
+    // Breadcrumbs v5
+    .container
+      ul.breadcrumb-v5
+        li
+          a(href='product.html') 產品介紹
+        li.active 9909 霧面戰車系列
+    // End Breadcrumbs v5
+    .container
+      .row
+        .col-md-6
+          .case-product
+            .image(name='9909', value='1')
+            .product-color-text.product-text 玫瑰粉紫
+        .col-md-6
+          .shop-product-heading
+            h2 9918 亮面戰車系列
+          p 日本設計，美麗華台灣廠生產。
+          br
+          h3.shop-product-title 顏色
+            span.product-color-text 玫瑰粉紫
+          ul#color9909.list-inline.product-color.margin-bottom-30
+            li(title='櫻花粉')
+              input#color-1(type='radio', name='color', value='1', checked='')
+              label(for='color-1')
+            li(title='海洋藍')
+              input#color-2(type='radio', name='color', value='2')
+              label(for='color-2')
+            li(title='微笑橘')
+              input#color-3(type='radio', name='color', value='3')
+              label(for='color-3')
+            li(title='星鑽灰')
+              input#color-4(type='radio', name='color', value='4')
+              label(for='color-4')
+            li(title='尊爵黑')
+              input#color-5(type='radio', name='color', value='5')
+              label(for='color-5')
+          h3.shop-product-title 尺吋
+          ul.list-inline.product-size.margin-bottom-30
+            li(title='24吋')
+              label(for='size-1') 24吋
+            li(title='27吋')
+              label(for='size-2') 27吋
+            li(title='29吋')
+              label(for='size-3') 29吋
+  // === End Shop Product ===
+
+  .content-md.container
+    .tab-v6
+      ul.nav.nav-tabs(role='tablist')
+        li.active
+          a(href='#specifications', role='tab', data-toggle='tab') 產品規格
+      .tab-content
+        #specifications.tab-pane.fade.in.active
+          h2 材質
+          p ABS塑鋼，PC(透明防彈玻璃材質)三層複合式箱殼材料獨一無二本體更耐撞，重擊後不易白化。
+
+          h2 尺寸
+          table.table.table-striped
+            thead
+              tr
+                th 吋數
+                th 長(cm)
+                th 寬(cm)
+                th 深(cm)
+                th 重量(kg)
+                th 適用天數
+                th 建議售價
+            tbody
+              tr
+                td 24 吋
+                td 59
+                td 42
+                td 27
+                td 4.6
+                td 3~5天適用
+                td $ 7,500
+              tr
+                td 27 吋
+                td 65
+                td 45
+                td 29
+                td 5.1
+                td 5~7天適用
+                td $ 8,200
+              tr
+                td 29 吋
+                td 71
+                td 51
+                td 30
+                td 5.8
+                td 1~2週適用
+                td $ 8,900
+          h2 產品特色
+          .row.feature.margin-bottom-30
+            .col-xs-12
+              h3 低噪音超耐用飛機輪
+              ul
+                li 360度旋轉自如，行進中接近無聲。
+                li 雙輪設計可平均載重，增加行進中的穩定度及順暢度。
+                li 耐高溫，載重40公斤高速前進也可輕鬆推行，不怕損壞。
+          .row.feature.margin-bottom-30
+            .col-xs-12
+              h3 國際專利拉桿
+              ul
+                li 鋁合金材質，高強度45度斜放可承重70公斤不變形。
+                li 隱藏式多段式拉桿，可依身高調整最適合使用高度。
+          .row.feature.margin-bottom-30
+            .col-xs-12
+              h3 吊式網袋(不可拆)
+              ul
+                li 內部上方多隔式網袋設計，物品容易整理放置。
+                li 內部下方可放置大量衣物及出國物品，用織帶束緊，利用吊式網袋區隔，衣物更整潔保有高品味旅程。
+          .row.feature.margin-bottom-30
+            .col-xs-12
+              h3 衣袈
+              ul
+                li 衣架:附吊掛式衣架，防止衣物縐摺。
+          .row.feature.margin-bottom-30
+            .col-xs-12
+              h3 TSA國際海關鎖頭
+              ul
+                li TSA鎖頭為美國海關簽約認可之行李箱鎖頭。
+                li 進出美國，行李箱可直接上鎖，避免海關安檢時破壞鎖頭造成旅遊不便。
+          .row.feature.margin-bottom-30
+            .col-xs-12
+              h3 「Ｘ」織帶
+            .col-xs-12
+              .row-xwebbing.margin-bottom-20
+                img(src='./img/x_1.png')
+                img.margin-left-10(src='./img/x_2.png')
+                p 壓開扣頭，扣頭翻向鋸齒面，往前推可增加長度。
+            .col-xs-12
+              .row-xwebbing.margin-bottom-20
+                img(src='./img/x_3.png')
+                img.margin-left-10(src='./img/x_4.png')
+                p 兩扣頭扣上，上方束帶往回拉，即可減短長度。
+
+block append js
+  script(src='./js/product.js')
+

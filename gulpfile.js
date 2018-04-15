@@ -81,7 +81,7 @@ gulp.task('webserver', () => {
   gulp
     .src(paths.dist.html)
     .pipe($.webserver({
-      port: 8080,
+      port: 8081,
       livereload: true,
       directoryListing: false
     }))

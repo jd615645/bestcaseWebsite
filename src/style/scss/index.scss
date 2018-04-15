@@ -73,19 +73,18 @@
   margin: 0px auto;
   transition: all 0.5s;
   background: url(../../img/9918_side.png) center center no-repeat;
-  
-  // &:hover {
-  //   background: url(../../img/9918_pos.png) center center no-repeat;
-  // }
 }
 .casen9918 {
   @include size(200px, 352px);
   margin: 0px auto;
   transition: all 0.5s;
   background: url(../../img/n9918_side.png) center center no-repeat;
-  // &:hover {
-  //   background: url(../../img/n9918_pos.png) center center no-repeat;
-  // }
+}
+.casen9909 {
+  @include size(200px, 352px);
+  margin: 0px auto;
+  transition: all 0.5s;
+  background: url(../../img/9909_side.png) center center no-repeat;
 }
 .bg-image-v1 {
   background: url(../../img/index_bg.png) repeat fixed;

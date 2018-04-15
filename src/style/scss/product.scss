@@ -61,6 +61,23 @@ p {
     background: rgb(61, 56, 63);
   }
 }
+#color9909 label {
+  &[for='color-1'] {
+    background: #e4a0b4;
+  }
+  &[for='color-2'] {
+    background: #b2cae2;
+  }
+  &[for='color-3'] {
+    background: #f4ae7d;
+  }
+  &[for='color-4'] {
+    background: #c0c4ce;
+  }
+  &[for='color-5'] {
+    background: #4b4c4e;
+  }
+}
 
 .case-product {
   @include size(100%, 455px);
@@ -139,6 +156,27 @@ p {
       background: url(../../img/n9918_7.png) center center no-repeat;
       background-size: 250px;
     }
+    // 9909
+    &[name='9909'][value='1'] {
+      background: url(../../img/9909_1.png) center center no-repeat;
+      background-size: 250px;
+    }
+    &[name='9909'][value='2'] {
+      background: url(../../img/9909_2.png) center center no-repeat;
+      background-size: 250px;
+    }
+    &[name='9909'][value='3'] {
+      background: url(../../img/9909_3.png) center center no-repeat;
+      background-size: 250px;
+    }
+    &[name='9909'][value='4'] {
+      background: url(../../img/9909_4.png) center center no-repeat;
+      background-size: 250px;
+    }
+    &[name='9909'][value='5'] {
+      background: url(../../img/9909_5.png) center center no-repeat;
+      background-size: 250px;
+    }
   }
 }
 
@@ -162,12 +200,24 @@ p {
 .feature {
   .feature-img {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     img {
       width: 100%;
       max-width: 400px;
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    }
+    .row-xwebbing {
+      display: flex;
+      flex-direction: row;
+      // align-items: center;
+      img {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        &:nth-child(even) {
+          margin-left: 1rem;
+        }
+      }
     }
   }
   .feature-text {
@@ -178,5 +228,16 @@ p {
   }
   p, li {
     font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .row-xwebbing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &:nth-child(even) {
+    margin-top: 1rem;
+    margin-left: 0rem;
   }
 }
