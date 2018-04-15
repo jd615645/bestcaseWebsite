@@ -208,17 +208,6 @@ p {
       max-width: 400px;
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
     }
-    .row-xwebbing {
-      display: flex;
-      flex-direction: row;
-      // align-items: center;
-      img {
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-        &:nth-child(even) {
-          margin-left: 1rem;
-        }
-      }
-    }
   }
   .feature-text {
     height: 266px;
@@ -228,16 +217,5 @@ p {
   }
   p, li {
     font-size: 1.4em;
-  }
-}
-@media screen and (max-width: 576px) {
-  .row-xwebbing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  &:nth-child(even) {
-    margin-top: 1rem;
-    margin-left: 0rem;
   }
 }
