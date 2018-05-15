@@ -20,6 +20,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
+  keep-history: true
   github-token: $GITHUB_TOKEN
   local-dir: dist
   email: jd615645@gmail.com
