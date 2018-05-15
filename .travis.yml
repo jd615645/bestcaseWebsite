@@ -25,8 +25,6 @@ deploy:
   target-branch: master
   email: jd615645@gmail.com
   name: jd615645
-  on:
-    branch: master
 
 notifications:
   email:
