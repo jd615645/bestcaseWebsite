@@ -17,6 +17,7 @@ script:
   - gulp build
   - gulp assetsmin
   - gulp images
+  - cp CNAME dist
 
 deploy:
   provider: pages
