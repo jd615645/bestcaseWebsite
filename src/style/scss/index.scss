@@ -86,6 +86,12 @@
   transition: all 0.5s;
   background: url(../img/9909_side.png) center center no-repeat;
 }
+.casen8816 {
+  @include size(200px, 352px);
+  margin: 0px auto;
+  transition: all 0.5s;
+  background: url(../img/8816_side.png) center center no-repeat;
+}
 .bg-image-v1 {
   background: url(../img/index_bg.png) repeat fixed;
 }

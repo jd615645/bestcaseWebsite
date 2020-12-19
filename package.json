@@ -21,6 +21,8 @@
     "gulp-webserver": "^0.9.1"
   },
   "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "babel-core": "^6.26.3",
     "gulp-imagemin": "^7.1.0",
     "gulp-load-plugins": "^2.0.6",

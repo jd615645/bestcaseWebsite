@@ -1,6 +1,7 @@
 const gulp = require('gulp')
 const $ = require('gulp-load-plugins')()
 const del = require('del')
+const babel = require('gulp-babel')
 const imagemin = require('gulp-imagemin')
 
 const paths = {
@@ -45,7 +46,7 @@ gulp.task('css', () => {
 gulp.task('scripts', () => {
   return gulp.src(paths.src.js)
     .pipe($.babel({
-      presets: ['es2015']
+      presets: ['@babel/env']
     }))
     .pipe($.uglify())
     .pipe(gulp.dest(paths.dist.js))
@@ -99,5 +100,5 @@ gulp.task('watch', () => {
   gulp.watch(paths.src.js, gulp.series('scripts'))
 })
 
-gulp.task('default', gulp.series('webserver', 'watch', () => {}))
-gulp.task('build', gulp.series('pug', 'css', 'sass', 'scripts', 'lib', () => { }))
+gulp.task('default', gulp.series('webserver', 'watch'))
+gulp.task('build', gulp.series('pug', 'css', 'sass', 'scripts', 'lib'))

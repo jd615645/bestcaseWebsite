@@ -1,0 +1,142 @@
+extends layout
+block style
+  link(rel='stylesheet', href='assets/css/shop.style.css')
+  link(rel='stylesheet', href='./style/product.css')
+block content
+  // === Shop Product ===
+  .shop-product
+    // Breadcrumbs v5
+    .container
+      ul.breadcrumb-v5
+        li
+          a(href='product.html') 產品介紹
+        li.active 8816 雙防爆拉鏈登機箱
+    // End Breadcrumbs v5
+    .container
+      .row
+        .col-md-6
+          .case-product
+            .image(name='8816', value='1')
+            .product-color-text.product-text 魅力咖啡
+        .col-md-6
+          .shop-product-heading
+            h2 8816 雙防爆拉鏈登機箱
+          p 日本設計，美麗華台灣廠生產。
+          br
+          h3.shop-product-title 顏色
+            span.product-color-text 魅力咖啡
+          ul#color8816.list-inline.product-color.margin-bottom-30
+            li(title='魅力咖啡')
+              input#color-1(type='radio', name='color', value='1', checked='')
+              label(for='color-1')
+            li(title='玫瑰粉紫')
+              input#color-2(type='radio', name='color', value='2')
+              label(for='color-2')
+            li(title='蘋果綠')
+              input#color-3(type='radio', name='color', value='3')
+              label(for='color-3')
+            li(title='寶石藍')
+              input#color-4(type='radio', name='color', value='4')
+              label(for='color-4')
+            li(title='極光藍')
+              input#color-5(type='radio', name='color', value='5')
+              label(for='color-5')
+            li(title='鈦金銀')
+              input#color-5(type='radio', name='color', value='6')
+              label(for='color-6')
+            li(title='鑽石黑')
+              input#color-5(type='radio', name='color', value='7')
+              label(for='color-7')
+          h3.shop-product-title 尺吋
+          ul.list-inline.product-size.margin-bottom-30
+            li(title='18吋')
+              label(for='size-1') 18吋
+  // === End Shop Product ===
+
+  .content-md.container
+    .tab-v6
+      ul.nav.nav-tabs(role='tablist')
+        li.active
+          a(href='#specifications', role='tab', data-toggle='tab') 產品規格
+      .tab-content
+        #specifications.tab-pane.fade.in.active
+          h2 材質
+          p ABS塑鋼，PC(透明防彈玻璃材質)三層複合式箱殼材料獨一無二本體更耐撞，重擊後不易白化。
+
+          h2 尺寸
+          table.table.table-striped
+            thead
+              tr
+                th 吋數
+                th 長(cm)
+                th 寬(cm)
+                th 深(cm)
+                th 重量(kg)
+                th 適用天數
+                th 建議售價
+            tbody
+              tr
+                td 18 吋
+                td 49
+                td 34
+                td 23
+                td 2.68
+                td 1~3天適用
+                td $ 5,100
+          h2 產品特色
+          .row.feature.margin-bottom-30
+            .col-md-6.feature-img
+              img(src='./img/8816_wheel.png')
+            .col-md-6.hidden-sm.hidden-xs.feature-text
+              h3 低噪音超耐用飛機輪
+              ul
+                li 360度旋轉自如，行進中接近無聲。
+                li 雙輪設計可平均載重，增加行進中的穩定度及順暢度。
+            .col-sm-12.hidden-md.hidden-lg
+              h3 低噪音超耐用飛機輪
+              ul
+                li 360度旋轉自如，行進中接近無聲。
+                li 雙輪設計可平均載重，增加行進中的穩定度及順暢度。
+          .row.feature.margin-bottom-30
+            .col-md-6.feature-img
+                img(src='./img/8816_handle.png')
+            .col-md-6.hidden-sm.hidden-xs.feature-text
+              h3 兩段式拉桿
+              ul
+                li 鋁合金材質，單手即可操作。
+                li 按壓拉桿上調整鈕，即可調整高度。
+            .col-sm-12.hidden-md.hidden-lg
+              h3 兩段式拉桿
+              ul
+                li 鋁合金材質，單手即可操作。
+                li 按壓拉桿上調整鈕，即可調整高度。
+          .row.feature.margin-bottom-30
+            .col-md-6.feature-img
+                img(src='./img/8816_feature.png')
+            .col-md-6.hidden-sm.hidden-xs.feature-text
+              h3 內裝配備
+              ul
+                li 吊式網袋: 可拆式網狀隔板，可依使用需求拆除，行李打包方便、有彈性。
+                li 衣架:附吊掛式衣架，防止衣物縐摺。
+            .col-sm-12.hidden-md.hidden-lg
+              h3 內裝配備
+              ul
+                li 吊式網袋: 可拆式網狀隔板，可依使用需求拆除，行李打包方便、有彈性。
+                li 衣架:附吊掛式衣架，防止衣物縐摺。
+          .row.feature.margin-bottom-30
+            .col-md-6.feature-img
+                img(src='./img/8816_tsa.png')
+            .col-md-6.hidden-sm.hidden-xs.feature-text
+              h3 TSA國際海關鎖頭
+              ul
+                li TSA鎖頭為美國海關簽約認可之行李箱鎖頭。
+                li 進出美國，行李箱可直接上鎖，避免海關安檢時破壞鎖頭造成旅遊不便。
+            .col-sm-12.hidden-md.hidden-lg
+              h3 TSA國際海關鎖頭
+              ul
+                li TSA鎖頭為美國海關簽約認可之行李箱鎖頭。
+                li 進出美國，行李箱可直接上鎖，避免海關安檢時破壞鎖頭造成旅遊不便。
+
+block append js
+  script(src='./js/product.js')
+

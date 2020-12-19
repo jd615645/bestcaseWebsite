@@ -40,25 +40,25 @@ p {
 
 .product-color label {
   &[for='color-1'] {
-    background: rgb(218, 99, 175);
+    background: #da63af;
   }
   &[for='color-2'] {
-    background: rgb(199, 192, 187);
+    background: #c7c0bb;
   }
   &[for='color-3'] {
-    background: rgb(130, 221, 235);
+    background: #82ddeb;
   }
   &[for='color-4'] {
-    background: rgb(99, 83, 83);
+    background: #635353;
   }
   &[for='color-5'] {
-    background: rgb(85, 77, 126);
+    background: #554d7e;
   }
   &[for='color-6'] {
-    background: rgb(200, 221, 117);
+    background: #c8dd75;
   }
   &[for='color-7'] {
-    background: rgb(61, 56, 63);
+    background: #3d383f;
   }
 }
 #color9909 label {
@@ -76,6 +76,29 @@ p {
   }
   &[for='color-5'] {
     background: #4b4c4e;
+  }
+}
+#color8816 label {
+  &[for='color-1'] {
+    background: #635353;
+  }
+  &[for='color-2'] {
+    background: #e4a0b4;
+  }
+  &[for='color-3'] {
+    background: #c8dd75;
+  }
+  &[for='color-4'] {
+    background: #554d7e;
+  }
+  &[for='color-5'] {
+    background: #82ddeb;
+  }
+  &[for='color-6'] {
+    background: #c7c0bb;
+  }
+  &[for='color-7'] {
+    background: #3d383f;
   }
 }
 
@@ -175,6 +198,35 @@ p {
     }
     &[name='9909'][value='5'] {
       background: url(../img/9909_5.png) center center no-repeat;
+      background-size: 250px;
+    }
+    // 8816
+    &[name='8816'][value='1'] {
+      background: url(../img/8816_1.png) center center no-repeat;
+      background-size: 250px;
+    }
+    &[name='8816'][value='2'] {
+      background: url(../img/8816_2.png) center center no-repeat;
+      background-size: 250px;
+    }
+    &[name='8816'][value='3'] {
+      background: url(../img/8816_3.png) center center no-repeat;
+      background-size: 250px;
+    }
+    &[name='8816'][value='4'] {
+      background: url(../img/8816_4.png) center center no-repeat;
+      background-size: 250px;
+    }
+    &[name='8816'][value='5'] {
+      background: url(../img/8816_5.png) center center no-repeat;
+      background-size: 250px;
+    }
+    &[name='8816'][value='6'] {
+      background: url(../img/8816_6.png) center center no-repeat;
+      background-size: 250px;
+    }
+    &[name='8816'][value='7'] {
+      background: url(../img/8816_7.png) center center no-repeat;
       background-size: 250px;
     }
   }
