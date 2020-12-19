@@ -75,7 +75,7 @@ gulp.task('assetsmin', () => {
   gulp.src('./src/assets/img/**')
     // .pipe($.imagemin())
     .pipe(gulp.dest('./dist/assets/img'))
-  gulp.src('./src/assets/plugins/**')
+  return gulp.src('./src/assets/plugins/**')
     .pipe(gulp.dest('./dist/assets/plugins'))
 })
 
