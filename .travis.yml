@@ -9,7 +9,7 @@ cache:
 
 install:
   - npm install -g gulp-cli
-  - yarn
+  - npm install
 
 #要執行的程式
 script:
