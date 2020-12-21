@@ -2,15 +2,25 @@ extends layout
 block style
   link(rel='stylesheet', href='./style/manual.css')
 block content
-  .container.content(style="padding-bottom: 240px")
+  .container.content
     .headline-center-v2.headline-center-v2-dark.margin-bottom-60
       h2 保養須知
       span.bordered-icon
         img(src='./img/bricon.png')
 
-    .row.margin-bottom-0.container
-      ul
-        li 若有局部污漬、殘膠，請以布沾環保去漬油輕微擦拭污漬處。
-        li 請勿使用甲苯、去光水或去標籤劑擦拭，會造成箱殼受損。
-        li 若發現輪子有不順的情況，可以上適當的潤滑油使輪子更順暢、使用更持久。
+    .row.margin-bottom-20.container(style="display: flex; align-items: center;")
+      .col-sm-2(style="margin-right: 3rem;")
+        img(src="https://i.imgur.com/90VdaM7.png", style="width: 150px")
+      .col-sm-8
+        p 若有局部污漬、殘膠，請以布沾環保去漬油輕微擦拭污漬處。
+    .row.margin-bottom-20.container(style="display: flex; align-items: center;")
+      .col-sm-2(style="margin-right: 3rem;")
+        img(src="https://i.imgur.com/AL9fnY3.png", style="width: 150px")
+      .col-sm-8
+        p 請勿使用甲苯、去光水或去標籤劑擦拭，會造成箱殼受損。
+    .row.margin-bottom-20.container(style="display: flex; align-items: center;")
+      .col-sm-2(style="margin-right: 3rem;")
+        img(src="https://i.imgur.com/qN6cowl.png", style="width: 150px")
+      .col-sm-8
+        p 若發現輪子有不順的情況，可以上適當的潤滑油使輪子更順暢、使用更持久。
 block append js
