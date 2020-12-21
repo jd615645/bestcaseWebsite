@@ -1,6 +1,7 @@
 extends layout
 block style
   link(rel='stylesheet', href='./style/about.css')
+  link(rel='stylesheet', href='./style/manual.css')
 block content
   .container.content
     .headline-center-v2.headline-center-v2-dark.margin-bottom-60
@@ -15,6 +16,34 @@ block content
         p 佳仕奇有限公司為 "美麗華皮件工業股份有限公司" 關係企業，專賣銷售國內知名品牌美麗華 "Commodore" 行李箱。
         p 本公司為國內數千家上市上櫃公司、大專院校、政府機關、醫院…等機關團體福委會簽約之特約廠商，提供簽約廠商員工最優惠及優質的行李箱選購及售後服務。
       p.idea-text 擁有佳仕奇行李箱，「無旅不悅」。
+    hr
+  .container.content
+    .headline-center-v2.headline-center-v2-dark.margin-bottom-60
+      h2 產品說明
+      span.bordered-icon
+        img(src='./img/bricon.png')
+
+    .row.margin-bottom-60.about-text.container
+      p 美麗華皮件工業股份有限公司為國內最大、在台灣生產的ABS硬殼旅行箱（luggage）製造工廠。以自有品牌"Commodore"行銷日本廿餘年，日本設計台灣製造，與東京同步流行。
+      hr
+      .row.container
+        a.commodore-link(href="http://luggage.com.tw/products.php?func=p_detail&p_id=1&pc_parent=0" target="_blank")
+          .easy-block-v3.service-or.equal-height-column.bg-color-green(style="height: 90px;")
+            .service-bg
+            i.icon-info
+            .inner-faq-b
+              h3 查看產品資訊及使用說明
+        //- img(src='./img/9918qr.png')
+      hr
+      h3 認證
+      ul
+        li 2009年6月通過ISO 9001 2000版 
+        li 2010年4月通過MIT微笑標章驗証 
+        li 2010年6月通過ISO 9001 2008版
+        li 通過BQR ISO 2002驗證合格
+      .row
+        img.sgs(src='./img/sgs.png', title='sgs認證')
+        img.r55126(src='./img/r55126.png', title='r55126')
       hr
       img.about-img(src='./img/about.png')
 block append js
